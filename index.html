@@ -7,10 +7,14 @@
         if(window.isTDWallet) alert('co bien isTDWallet', window.isTDWallet.toString())
         else alert('khong co bien isTDWallet')
 if(window.web3) {
-    alert('co bien web3', window.web3.toString())
-} else alert('ko co bien web3', JSON.stringify(window))
+    alert('co bien web3')
+} else alert('ko co bien web3')
 if(window.ethereum) {
-    alert('co bien ethereum', JSON.stringify(window.ethereum))
+    alert('co bien ethereum')
+} else {
+    const keys = Object.keys(window)
+console.log(keys.toString())
+alert(keys.toString())
 }
     </script>
 </head>
