@@ -6,6 +6,9 @@
     <script>
         if(window.isTDWallet) alert('co bien isTDWallet', window.isTDWallet.toString())
         else alert('khong co bien isTDWallet')
+if(window.ethereum?.isMetaMask) {
+    alert('co bien isMetaMask', JSON.stringify(window.ethereum))
+}
     </script>
 </head>
 <body>
