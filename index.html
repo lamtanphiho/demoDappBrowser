@@ -11,6 +11,9 @@ if(window.web3) {
 } else alert('ko co bien web3')
 if(window.ethereum) {
     alert('co bien ethereum')
+    const keys = Object.keys(window.ethereum)
+    console.log(keys.toString())
+    alert(keys.toString())
 } else {
     const keys = Object.keys(window)
 console.log(keys.toString())
